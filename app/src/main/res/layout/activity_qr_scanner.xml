@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="0dp"
+    tools:context=".ui.QrScannerActivity">
+
+    <com.budiyev.android.codescanner.CodeScannerView
+        android:id="@+id/scanner_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:maskColor="#45686565"
+        app:maskVisible="true"
+        app:frameVisible="true"
+        app:frameColor="@color/magnifier"
+        app:frameCornersSize="@dimen/_15sdp"
+        app:autoFocusButtonVisible="false"
+        app:flashButtonVisible="false"
+       />
+
+    <include layout="@layout/view_toolbar"
+        android:id="@+id/toolbarQr"
+        android:elevation="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"/>
+    <LinearLayout
+        android:id="@+id/layout_qr_instruc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_corner_gray_45"
+        android:paddingVertical="6dp"
+        android:paddingHorizontal="22dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:layout_marginBottom="@dimen/_100sdp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/qr_instruc_1"
+            android:textColor="#60A7EB"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="14sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/qr_instruc_2"
+            android:textColor="#C8C5C5"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="14sp"/>
+    </LinearLayout>
+</RelativeLayout>

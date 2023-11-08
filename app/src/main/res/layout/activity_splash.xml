@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:paddingTop="25dp">
+
+
+    <ImageView
+        android:id="@+id/ic_logo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:src="@drawable/icon_logo" />
+
+
+    <TextView
+        android:id="@+id/tv_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ic_logo"
+        android:layout_marginTop="22dp"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="center"
+        android:text="Magnifier,\nMagnifying Glass"
+        android:textColor="#2A2929"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/load_file"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tv_load_ads"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginBottom="10dp"
+        android:indeterminate="true"
+        android:visibility="visible"
+        app:indicatorColor="@color/magnifier"
+        app:trackColor="#D9D9D9"
+        app:trackCornerRadius="5dp" />
+
+    <TextView
+        android:id="@+id/tv_load_ads"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:indeterminateTint="#F49B11"
+        android:text="@string/this_action_can_contain_ads"
+        android:textColor="#6C6C6C"
+        android:textSize="13sp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:background="#000000"
+        android:gravity="center"
+        android:paddingHorizontal="@dimen/_25sdp"
+        android:paddingVertical="@dimen/_10sdp"
+        android:text="Start"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+</RelativeLayout>

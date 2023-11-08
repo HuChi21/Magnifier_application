@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.BaseProject" parent="Theme.AppCompat.Light.NoActionBar" >
+        <item name="colorAccent">@color/headerColorRed</item>
+        <item name="colorPrimary">@color/headerColorRed</item>
+        <item name="colorPrimaryDark">@color/headerColorRed</item>
+        <item name="android:splitMotionEvents">false</item>
+        <item name="android:windowEnableSplitTouch">false</item>
+    </style>
+</resources>

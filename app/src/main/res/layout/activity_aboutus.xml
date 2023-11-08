@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.AboutUsActivity">
+
+    <include
+        android:id="@+id/toolbarAboutUs"
+        layout="@layout/view_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_48sdp" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_below="@id/toolbarAboutUs"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_58sdp"
+        android:src="@drawable/icon_logo" />
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="@dimen/_13sdp"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="center"
+        android:text="@string/app_name2"
+        android:textStyle="bold"
+        android:textColor="#2A2929"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/txtVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/version"
+        android:layout_below="@id/txt"
+        android:textColor="#838383"
+        android:layout_centerHorizontal="true"
+        android:textSize="14sp"/>
+    <include
+        android:id="@+id/include"
+        layout="@layout/layout_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</RelativeLayout>
